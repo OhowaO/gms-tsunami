@@ -7,7 +7,7 @@ import static org.springframework.security.test.web.servlet.request.SecurityMock
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import com.gms.tsunami.domain.Authority;
 import com.gms.tsunami.domain.User;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 public class UserResourceIT {
     private static final String DEFAULT_LOGIN = "johndoe";
 

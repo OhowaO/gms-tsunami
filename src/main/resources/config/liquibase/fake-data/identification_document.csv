@@ -1,0 +1,11 @@
+id;id_type;unique_document_id;date_of_issue;issueing_country;date_of_expiry;photo_1;photo_1_content_type;photo_2;photo_2_content_type;verified
+1;Passport;Integration;2021-02-24T17:40:16;OTHER;2021-02-24T10:09:22;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;true
+2;ResidencePermit;Buckinghamshire Generic Venezuela;2021-02-24T19:22:57;OTHER;2021-02-24T02:13:13;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;true
+3;DrivingLicense;dot-com Credit Card Account;2021-02-24T03:56:20;KENYA;2021-02-24T01:31:48;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;false
+4;SchoolID;USB Unbranded Analyst;2021-02-23T20:43:13;KENYA;2021-02-24T09:59:48;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;false
+5;DrivingLicense;Books Applications;2021-02-24T03:14:37;OTHER;2021-02-24T10:13:33;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;false
+6;Passport;Niger;2021-02-24T01:51:26;KENYA;2021-02-24T04:58:54;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;false
+7;DrivingLicense;French Southern Territories optimize Awesome;2021-02-24T13:40:58;KENYA;2021-02-23T20:50:33;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;false
+8;SchoolID;Israel Digitized;2021-02-24T12:31:59;OTHER;2021-02-24T15:51:12;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;true
+9;Passport;copying user-centric;2021-02-23T21:04:07;OTHER;2021-02-24T04:07:05;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;false
+10;NationalID;Connecticut frame;2021-02-24T11:19:27;KENYA;2021-02-24T09:09:39;../fake-data/blob/hipster.png;image/png;../fake-data/blob/hipster.png;image/png;true

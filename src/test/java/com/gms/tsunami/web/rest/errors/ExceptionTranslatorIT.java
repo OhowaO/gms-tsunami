@@ -7,7 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ import org.springframework.test.web.servlet.MockMvc;
  */
 @WithMockUser
 @AutoConfigureMockMvc
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 public class ExceptionTranslatorIT {
     @Autowired
     private MockMvc mockMvc;

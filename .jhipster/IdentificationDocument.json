@@ -1,0 +1,73 @@
+{
+  "name": "IdentificationDocument",
+  "fields": [
+    {
+      "fieldName": "idType",
+      "fieldType": "IDType",
+      "fieldValues": "NationalID,Passport,ResidencePermit,DrivingLicense,SchoolID",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "uniqueDocumentID",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "dateOfIssue",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "issueingCountry",
+      "fieldType": "Countries",
+      "fieldValues": "KENYA,OTHER",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateOfExpiry",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "photo1",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "photo2",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "verified",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "gMSUser",
+      "otherEntityRelationshipName": "identificationDocument",
+      "relationshipName": "uniqueDocumentID",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "gMSUser",
+      "otherEntityRelationshipName": "userID",
+      "relationshipName": "gMSUser",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210224194819",
+  "entityTableName": "identification_document",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["GMS"]
+}

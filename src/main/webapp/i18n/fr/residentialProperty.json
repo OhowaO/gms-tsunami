@@ -1,0 +1,32 @@
+{
+  "gmsApp": {
+    "residentialProperty": {
+      "home": {
+        "title": "ResidentialProperties",
+        "createLabel": "Créer un nouveau Residential Property",
+        "createOrEditLabel": "Créer ou éditer un Residential Property",
+        "notFound": "Aucun Residential Property trouvé"
+      },
+      "created": "Un nouveau Residential Property a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Residential Property avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Residential Property avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Residential Property {{ id }} ?"
+      },
+      "detail": {
+        "title": "Residential Property"
+      },
+      "residentialPropertyID": "Residential Property ID",
+      "type": "Type",
+      "ownerID": "Owner ID",
+      "houseNumber": "House Number",
+      "block": "Block",
+      "apartmentName": "Apartment Name",
+      "streetName": "Street Name",
+      "city": "City",
+      "country": "Country",
+      "residentialPropertyID": "Residential Property ID",
+      "ownerID": "Owner ID"
+    }
+  }
+}

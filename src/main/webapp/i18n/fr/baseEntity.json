@@ -1,0 +1,22 @@
+{
+  "gmsApp": {
+    "baseEntity": {
+      "home": {
+        "title": "BaseEntities",
+        "createLabel": "Créer un nouveau Base Entity",
+        "createOrEditLabel": "Créer ou éditer un Base Entity",
+        "notFound": "Aucun Base Entity trouvé"
+      },
+      "created": "Un nouveau Base Entity a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Base Entity avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Base Entity avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Base Entity {{ id }} ?"
+      },
+      "detail": {
+        "title": "Base Entity"
+      },
+      "iD": "I D"
+    }
+  }
+}

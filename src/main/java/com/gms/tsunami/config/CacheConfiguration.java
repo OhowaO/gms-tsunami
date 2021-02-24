@@ -13,9 +13,6 @@ import org.springframework.boot.info.BuildProperties;
 import org.springframework.boot.info.GitProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.context.annotation.*;
 
 @Configuration
@@ -50,6 +47,18 @@ public class CacheConfiguration {
             createCache(cm, com.gms.tsunami.domain.User.class.getName());
             createCache(cm, com.gms.tsunami.domain.Authority.class.getName());
             createCache(cm, com.gms.tsunami.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.gms.tsunami.domain.BaseEntity.class.getName());
+            createCache(cm, com.gms.tsunami.domain.GMSUser.class.getName());
+            createCache(cm, com.gms.tsunami.domain.GMSUser.class.getName() + ".userIDS");
+            createCache(cm, com.gms.tsunami.domain.IdentificationDocument.class.getName());
+            createCache(cm, com.gms.tsunami.domain.Tenant.class.getName());
+            createCache(cm, com.gms.tsunami.domain.Invite.class.getName());
+            createCache(cm, com.gms.tsunami.domain.InviteData.class.getName());
+            createCache(cm, com.gms.tsunami.domain.ResidentialProperty.class.getName());
+            createCache(cm, com.gms.tsunami.domain.ResidentialProperty.class.getName() + ".residentialPropertyIDS");
+            createCache(cm, com.gms.tsunami.domain.ResidentialProperty.class.getName() + ".ownerIDS");
+            createCache(cm, com.gms.tsunami.domain.Owner.class.getName());
+            createCache(cm, com.gms.tsunami.domain.Owner.class.getName() + ".ownerIDS");
             // jhipster-needle-ehcache-add-entry
         };
     }

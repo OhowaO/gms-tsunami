@@ -1,0 +1,32 @@
+{
+  "gmsApp": {
+    "residentialProperty": {
+      "home": {
+        "title": "Residential Properties",
+        "createLabel": "Create a new Residential Property",
+        "createOrEditLabel": "Create or edit a Residential Property",
+        "notFound": "No Residential Properties found"
+      },
+      "created": "A new Residential Property is created with identifier {{ param }}",
+      "updated": "A Residential Property is updated with identifier {{ param }}",
+      "deleted": "A Residential Property is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Residential Property {{ id }}?"
+      },
+      "detail": {
+        "title": "Residential Property"
+      },
+      "residentialPropertyID": "Residential Property ID",
+      "type": "Type",
+      "ownerID": "Owner ID",
+      "houseNumber": "House Number",
+      "block": "Block",
+      "apartmentName": "Apartment Name",
+      "streetName": "Street Name",
+      "city": "City",
+      "country": "Country",
+      "residentialPropertyID": "Residential Property ID",
+      "ownerID": "Owner ID"
+    }
+  }
+}

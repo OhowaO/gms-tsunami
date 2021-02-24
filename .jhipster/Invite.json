@@ -1,0 +1,102 @@
+{
+  "name": "Invite",
+  "fields": [
+    {
+      "fieldName": "host",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "guest",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "validFrom",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "validTo",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "inviteStatus",
+      "fieldType": "InviteStatus",
+      "fieldValues": "PENDING,ACCEPTED,EXPIRED,CANCELLED",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "tenant",
+      "otherEntityRelationshipName": "userID",
+      "relationshipName": "host",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "gMSUser",
+      "otherEntityRelationshipName": "userID",
+      "relationshipName": "guest",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "inviteData",
+      "otherEntityRelationshipName": "start",
+      "relationshipName": "validFrom",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "inviteData",
+      "otherEntityRelationshipName": "stop",
+      "relationshipName": "validTo",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "inviteData",
+      "otherEntityRelationshipName": "houseNumber",
+      "relationshipName": "residentialProperty",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "inviteData",
+      "otherEntityRelationshipName": "block",
+      "relationshipName": "residentialProperty",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "inviteData",
+      "otherEntityRelationshipName": "apartmentName",
+      "relationshipName": "residentialProperty",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "inviteData",
+      "otherEntityRelationshipName": "streetName",
+      "relationshipName": "residentialProperty",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210224195019",
+  "entityTableName": "invite",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["GMS"]
+}

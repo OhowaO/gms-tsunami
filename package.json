@@ -1,7 +1,7 @@
 {
-  "name": "tsunami",
+  "name": "gms",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for tsunami",
+  "description": "Description for GMS",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

@@ -1,0 +1,24 @@
+{
+  "gmsApp": {
+    "owner": {
+      "home": {
+        "title": "Owners",
+        "createLabel": "Créer un nouveau Owner",
+        "createOrEditLabel": "Créer ou éditer un Owner",
+        "notFound": "Aucun Owner trouvé"
+      },
+      "created": "Un nouveau Owner a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Owner avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Owner avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Owner {{ id }} ?"
+      },
+      "detail": {
+        "title": "Owner"
+      },
+      "userID": "User ID",
+      "userID": "User ID",
+      "ownerID": "Owner ID"
+    }
+  }
+}

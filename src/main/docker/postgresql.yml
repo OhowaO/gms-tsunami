@@ -1,11 +1,11 @@
 version: '2'
 services:
-  tsunami-postgresql:
+  gms-postgresql:
     image: postgres:12.3
     # volumes:
-    #     - ~/volumes/jhipster/tsunami/postgresql/:/var/lib/postgresql/data/
+    #     - ~/volumes/jhipster/GMS/postgresql/:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=tsunami
+      - POSTGRES_USER=GMS
       - POSTGRES_PASSWORD=
       - POSTGRES_HOST_AUTH_METHOD=trust
     ports:

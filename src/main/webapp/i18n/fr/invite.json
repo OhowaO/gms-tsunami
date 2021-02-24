@@ -1,0 +1,34 @@
+{
+  "gmsApp": {
+    "invite": {
+      "home": {
+        "title": "Invites",
+        "createLabel": "Créer un nouveau Invite",
+        "createOrEditLabel": "Créer ou éditer un Invite",
+        "notFound": "Aucun Invite trouvé"
+      },
+      "created": "Un nouveau Invite a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Invite avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Invite avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Invite {{ id }} ?"
+      },
+      "detail": {
+        "title": "Invite"
+      },
+      "host": "Host",
+      "guest": "Guest",
+      "validFrom": "Valid From",
+      "validTo": "Valid To",
+      "inviteStatus": "Invite Status",
+      "host": "Host",
+      "guest": "Guest",
+      "validFrom": "Valid From",
+      "validTo": "Valid To",
+      "residentialProperty": "Residential Property",
+      "residentialProperty": "Residential Property",
+      "residentialProperty": "Residential Property",
+      "residentialProperty": "Residential Property"
+    }
+  }
+}

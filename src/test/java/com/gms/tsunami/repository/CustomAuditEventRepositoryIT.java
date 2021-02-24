@@ -3,7 +3,7 @@ package com.gms.tsunami.repository;
 import static com.gms.tsunami.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.Constants;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import com.gms.tsunami.config.audit.AuditEventConverter;
@@ -27,7 +27,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 @Transactional
 public class CustomAuditEventRepositoryIT {
     @Autowired

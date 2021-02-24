@@ -1,0 +1,9 @@
+{
+  "gmsApp": {
+    "ResidentialPropertyType": {
+      "null": "",
+      "HOUSE": "HOUSE",
+      "APARTMENTS": "APARTMENTS"
+    }
+  }
+}

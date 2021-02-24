@@ -1,0 +1,11 @@
+{
+  "gmsApp": {
+    "InviteStatus": {
+      "null": "",
+      "PENDING": "PENDING",
+      "ACCEPTED": "ACCEPTED",
+      "EXPIRED": "EXPIRED",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

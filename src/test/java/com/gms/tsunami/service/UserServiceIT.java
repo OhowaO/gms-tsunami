@@ -2,7 +2,7 @@ package com.gms.tsunami.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.Constants;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import com.gms.tsunami.domain.User;
@@ -30,7 +30,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 @Transactional
 public class UserServiceIT {
     private static final String DEFAULT_LOGIN = "johndoe";
