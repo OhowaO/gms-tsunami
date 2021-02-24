@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity IdentificationDocument.
+    -->
+    <changeSet id="20210224194819-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="unique_documentid_id"
+                                 baseTableName="identification_document"
+                                 constraintName="fk_identification_document_unique_documentid_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="gms_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="gmsuser_id"
+                                 baseTableName="identification_document"
+                                 constraintName="fk_identification_document_gmsuser_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="gms_user"/>
+
+    </changeSet>
+</databaseChangeLog>

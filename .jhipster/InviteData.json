@@ -1,0 +1,98 @@
+{
+  "name": "InviteData",
+  "fields": [
+    {
+      "fieldName": "start",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "stop",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "propertyType",
+      "fieldType": "ResidentialPropertyType",
+      "fieldValues": "HOUSE,APARTMENTS",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "houseNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "block",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apartmentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "streetName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "validFrom",
+      "relationshipName": "start",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "validTo",
+      "relationshipName": "stop",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "residentialProperty",
+      "relationshipName": "houseNumber",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "residentialProperty",
+      "relationshipName": "block",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "residentialProperty",
+      "relationshipName": "apartmentName",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "residentialProperty",
+      "relationshipName": "streetName",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210224195119",
+  "entityTableName": "invite_data",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["GMS"]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Tenant",
+  "fields": [
+    {
+      "fieldName": "userID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "gMSUser",
+      "otherEntityRelationshipName": "userID",
+      "relationshipName": "userID",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "residentialProperty",
+      "otherEntityRelationshipName": "tenant",
+      "relationshipName": "userID",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invite",
+      "otherEntityRelationshipName": "host",
+      "relationshipName": "userID",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "residentialProperty",
+      "otherEntityRelationshipName": "residentialPropertyID",
+      "relationshipName": "residentialProperty",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210224194919",
+  "entityTableName": "tenant",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["GMS"]
+}

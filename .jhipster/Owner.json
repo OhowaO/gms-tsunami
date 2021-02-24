@@ -1,0 +1,39 @@
+{
+  "name": "Owner",
+  "fields": [
+    {
+      "fieldName": "userID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "gMSUser",
+      "otherEntityRelationshipName": "userID",
+      "relationshipName": "userID",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "residentialProperty",
+      "otherEntityRelationshipName": "ownerID",
+      "relationshipName": "ownerID",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210224195319",
+  "entityTableName": "owner",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["GMS"]
+}

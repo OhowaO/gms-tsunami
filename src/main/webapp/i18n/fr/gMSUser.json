@@ -1,0 +1,33 @@
+{
+  "gmsApp": {
+    "gMSUser": {
+      "home": {
+        "title": "GMSUsers",
+        "createLabel": "Créer un nouveau GMS User",
+        "createOrEditLabel": "Créer ou éditer un GMS User",
+        "notFound": "Aucun GMS User trouvé"
+      },
+      "created": "Un nouveau GMS User a été créé avec l'identifiant {{ param }}",
+      "updated": "Le GMS User avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le GMS User avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le GMS User {{ id }} ?"
+      },
+      "detail": {
+        "title": "GMS User"
+      },
+      "userID": "User ID",
+      "firstNames": "First Names",
+      "lastName": "Last Name",
+      "gender": "Gender",
+      "emailAdress": "Email Adress",
+      "telephoneNumber": "Telephone Number",
+      "dateOfBirth": "Date Of Birth",
+      "userID": "User ID",
+      "userID": "User ID",
+      "userID": "User ID",
+      "userID": "User ID",
+      "userID": "User ID"
+    }
+  }
+}

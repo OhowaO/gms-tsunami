@@ -1,0 +1,12 @@
+{
+  "gmsApp": {
+    "IDType": {
+      "null": "",
+      "NationalID": "NationalID",
+      "Passport": "Passport",
+      "ResidencePermit": "ResidencePermit",
+      "DrivingLicense": "DrivingLicense",
+      "SchoolID": "SchoolID"
+    }
+  }
+}

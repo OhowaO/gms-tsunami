@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Tenant.
+    -->
+    <changeSet id="20210224194919-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="userid_id"
+                                 baseTableName="tenant"
+                                 constraintName="fk_tenant_userid_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="gms_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="userid_id"
+                                 baseTableName="tenant"
+                                 constraintName="fk_tenant_userid_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="residential_property"/>
+
+        <addForeignKeyConstraint baseColumnNames="residential_property_id"
+                                 baseTableName="tenant"
+                                 constraintName="fk_tenant_residential_property_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="residential_property"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -3,7 +3,7 @@ package com.gms.tsunami.config.timezone;
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import com.gms.tsunami.repository.timezone.DateTimeWrapper;
 import com.gms.tsunami.repository.timezone.DateTimeWrapperRepository;
@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 public class HibernateTimeZoneIT {
     @Autowired
     private DateTimeWrapperRepository dateTimeWrapperRepository;

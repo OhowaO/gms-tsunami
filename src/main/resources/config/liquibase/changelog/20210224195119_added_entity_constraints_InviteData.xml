@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity InviteData.
+    -->
+    <changeSet id="20210224195119-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="start_id"
+                                 baseTableName="invite_data"
+                                 constraintName="fk_invite_data_start_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invite"/>
+
+        <addForeignKeyConstraint baseColumnNames="stop_id"
+                                 baseTableName="invite_data"
+                                 constraintName="fk_invite_data_stop_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invite"/>
+
+        <addForeignKeyConstraint baseColumnNames="house_number_id"
+                                 baseTableName="invite_data"
+                                 constraintName="fk_invite_data_house_number_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invite"/>
+
+        <addForeignKeyConstraint baseColumnNames="block_id"
+                                 baseTableName="invite_data"
+                                 constraintName="fk_invite_data_block_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invite"/>
+
+        <addForeignKeyConstraint baseColumnNames="apartment_name_id"
+                                 baseTableName="invite_data"
+                                 constraintName="fk_invite_data_apartment_name_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invite"/>
+
+        <addForeignKeyConstraint baseColumnNames="street_name_id"
+                                 baseTableName="invite_data"
+                                 constraintName="fk_invite_data_street_name_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invite"/>
+
+    </changeSet>
+</databaseChangeLog>

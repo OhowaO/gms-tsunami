@@ -5,7 +5,7 @@ import static com.gms.tsunami.web.rest.TestUtil.authenticationToken;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import java.time.Instant;
 import java.util.Collections;
@@ -27,7 +27,7 @@ import org.springframework.web.context.WebApplicationContext;
 /**
  * Integration tests for the {@link LogoutResource} REST controller.
  */
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 public class LogoutResourceIT {
     @Autowired
     private ClientRegistrationRepository registrations;

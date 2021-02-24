@@ -1,0 +1,34 @@
+{
+  "gmsApp": {
+    "inviteData": {
+      "home": {
+        "title": "Invite Data",
+        "createLabel": "Create a new Invite Data",
+        "createOrEditLabel": "Create or edit a Invite Data",
+        "notFound": "No Invite Data found"
+      },
+      "created": "A new Invite Data is created with identifier {{ param }}",
+      "updated": "A Invite Data is updated with identifier {{ param }}",
+      "deleted": "A Invite Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Invite Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Invite Data"
+      },
+      "start": "Start",
+      "stop": "Stop",
+      "propertyType": "Property Type",
+      "houseNumber": "House Number",
+      "block": "Block",
+      "apartmentName": "Apartment Name",
+      "streetName": "Street Name",
+      "start": "Start",
+      "stop": "Stop",
+      "houseNumber": "House Number",
+      "block": "Block",
+      "apartmentName": "Apartment Name",
+      "streetName": "Street Name"
+    }
+  }
+}

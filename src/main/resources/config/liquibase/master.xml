@@ -14,7 +14,22 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224194619_added_entity_BaseEntity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224194719_added_entity_GMSUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224194819_added_entity_IdentificationDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224194919_added_entity_Tenant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195019_added_entity_Invite.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195119_added_entity_InviteData.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195219_added_entity_ResidentialProperty.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195319_added_entity_Owner.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20210224194619_added_entity_constraints_BaseEntity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224194819_added_entity_constraints_IdentificationDocument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224194919_added_entity_constraints_Tenant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195019_added_entity_constraints_Invite.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195119_added_entity_constraints_InviteData.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195219_added_entity_constraints_ResidentialProperty.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224195319_added_entity_constraints_Owner.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

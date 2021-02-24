@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.gms.tsunami.TsunamiApp;
+import com.gms.tsunami.GmsApp;
 import com.gms.tsunami.config.TestSecurityConfiguration;
 import com.gms.tsunami.domain.PersistentAuditEvent;
 import com.gms.tsunami.repository.PersistenceAuditEventRepository;
@@ -29,7 +29,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = { TsunamiApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = { GmsApp.class, TestSecurityConfiguration.class })
 @Transactional
 public class AuditResourceIT {
     private static final String SAMPLE_PRINCIPAL = "SAMPLE_PRINCIPAL";

@@ -1,0 +1,31 @@
+{
+  "gmsApp": {
+    "identificationDocument": {
+      "home": {
+        "title": "Identification Documents",
+        "createLabel": "Create a new Identification Document",
+        "createOrEditLabel": "Create or edit a Identification Document",
+        "notFound": "No Identification Documents found"
+      },
+      "created": "A new Identification Document is created with identifier {{ param }}",
+      "updated": "A Identification Document is updated with identifier {{ param }}",
+      "deleted": "A Identification Document is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Identification Document {{ id }}?"
+      },
+      "detail": {
+        "title": "Identification Document"
+      },
+      "idType": "Id Type",
+      "uniqueDocumentID": "Unique Document ID",
+      "dateOfIssue": "Date Of Issue",
+      "issueingCountry": "Issueing Country",
+      "dateOfExpiry": "Date Of Expiry",
+      "photo1": "Photo 1",
+      "photo2": "Photo 2",
+      "verified": "Verified",
+      "uniqueDocumentID": "Unique Document ID",
+      "gMSUser": "G MS User"
+    }
+  }
+}

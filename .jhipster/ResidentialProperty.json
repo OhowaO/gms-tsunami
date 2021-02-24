@@ -1,0 +1,77 @@
+{
+  "name": "ResidentialProperty",
+  "fields": [
+    {
+      "fieldName": "residentialPropertyID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "ResidentialPropertyType",
+      "fieldValues": "HOUSE,APARTMENTS",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ownerID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "houseNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "block",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apartmentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "streetName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "Countries",
+      "fieldValues": "KENYA,OTHER",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tenant",
+      "otherEntityRelationshipName": "residentialProperty",
+      "relationshipName": "residentialPropertyID"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "owner",
+      "otherEntityRelationshipName": "ownerID",
+      "relationshipName": "ownerID",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210224195219",
+  "entityTableName": "residential_property",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["GMS"]
+}
