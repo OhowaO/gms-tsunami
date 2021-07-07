@@ -1,0 +1,132 @@
+application {
+  config {
+    baseName GMS,
+    applicationType monolith,
+    authenticationType oauth2,
+    packageName com.gms.tsunami,
+    prodDatabaseType postgresql,
+    cacheProvider ehcache,
+    buildTool maven,
+    clientFramework react,
+    testFrameworks [protractor]
+  }
+  entities *
+}
+
+/* Serializable */
+entity BaseEntity{
+	ID Long unique required
+}
+
+enum Gender{
+	MALE, FEMALE, OTHER
+}
+
+enum Countries{
+	KENYA, OTHER
+}
+
+enum IDType{
+	NationalID, Passport, ResidencePermit, DrivingLicense
+    SchoolID
+}
+
+enum InviteStatus{
+	PENDING, ACCEPTED, EXPIRED, CANCELLED
+}
+
+enum ResidentialPropertyType{
+	HOUSE, APARTMENTS
+}
+
+entity User{
+	firstNames String required
+    lastName String required
+    gender Gender required
+    emailAdress String required
+    telephoneNumber String required
+    dateOfBirth Instant required
+}
+
+entity IdentificationDocument{
+	idType IDType required
+	uniqueDocumentID String unique required
+    dateOfIssue Instant required
+    issueingCountry Countries required
+    dateOfExpiry Instant
+    photo1 Blob required
+    photo2 Blob
+    verified Boolean
+}
+
+entity Tenant{
+	userID Long required
+}
+
+entity Invite{
+	host String required
+    guest String required
+    validFrom Instant required
+    validTo Instant required
+    inviteStatus InviteStatus required
+}
+
+entity InviteData{
+	start Instant
+    stop Instant
+    propertyType ResidentialPropertyType required
+    houseNumber String required
+    block String
+    apartmentName String
+    streetName String required
+}
+
+entity ResidentialProperty{
+	residentialPropertyID Long required
+	type ResidentialPropertyType required
+	ownerID Long required
+    houseNumber String required
+    block String
+    apartmentName String 
+	streetName String required
+    city String required
+    country Countries required
+}
+
+entity Owner{
+	userID Long required
+}
+
+relationship OneToMany{
+	User to IdentificationDocument{uniqueDocumentID}
+}
+
+relationship ManyToOne{
+	IdentificationDocument{uniqueDocumentID} to User{baseEntity(ID)}
+    Tenant{userID} to ResidentialProperty{residentialPropertyID}
+}
+
+relationship OneToOne{
+    BaseEntity{ID} to User
+	Tenant{userID} to User{BaseEntity(ID)}
+	Owner{userID} to User{BaseEntity(ID)}
+    Invite{host} to Tenant{userID}
+    Invite{guest} to User{baseEntity(ID)}
+    InviteData{start} to Invite{validFrom}
+    InviteData{stop} to Invite{validTo}
+    InviteData{houseNumber} to Invite{residentialProperty(houseNumber)}
+    InviteData{block} to Invite{residentialProperty(block)}
+    InviteData{apartmentName} to Invite{residentialProperty(apartmentName)}
+    InviteData{streetName} to Invite{residentialProperty(streetName)}
+}
+
+relationship ManyToMany{
+	ResidentialProperty{ownerID} to Owner{ownerID}
+}
+
+paginate Invites, InviteData with pagination
+service * with serviceClass except InviteStatus, BaseEntity, ResidentialPropertyType, Gender, IDType
+
+
+
+
